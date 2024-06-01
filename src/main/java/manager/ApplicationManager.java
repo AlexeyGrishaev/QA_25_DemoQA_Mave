@@ -1,5 +1,6 @@
 package manager;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -44,4 +45,6 @@ public class ApplicationManager {
 //        if (driver != null)
 //            driver.quit();
     }
+
+
 }

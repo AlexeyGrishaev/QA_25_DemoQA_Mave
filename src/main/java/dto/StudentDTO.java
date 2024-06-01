@@ -1,14 +1,23 @@
 package dto;
 
+import enums.Gender;
+
 public class StudentDTO {
     private String name;
     private String lastName;
     private String email;
+    private Gender gender;
 
-    public StudentDTO(String name, String lastName, String email) {
+
+    public StudentDTO(String name, String lastName, String email, Gender gender) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
+        this.gender = gender;
+    }
+
+    public Gender getGender() {
+        return gender;
     }
 
     public String getName() {

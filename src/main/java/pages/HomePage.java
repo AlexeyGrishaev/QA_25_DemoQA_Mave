@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -18,8 +17,9 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//div[@class='category-cards']/div[2]")
     WebElement btnForms;
 
-    public Forms clickBtnFroms(){
+    public FormsPage clickBtnFroms(){
+        hideFooter();
         btnForms.click();
-        return new Forms(driver);
+        return new FormsPage(driver);
     }
 }

@@ -1,14 +1,13 @@
 package pages;
 
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-public class Forms extends BasePage{
-    public Forms(WebDriver driver){
+public class FormsPage extends BasePage{
+    public FormsPage(WebDriver driver){
         setDriver(driver);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10),this);
 
@@ -16,8 +15,9 @@ public class Forms extends BasePage{
     @FindBy(xpath = "//span[text()='Practice Form']")
     WebElement btnPracticeForm;
 
-    public AuttomationPracticeForm clickBtnPracticeForm (){
+    public AuttomationPracticeFormPage clickBtnPracticeForm (){
+        hideFooter();
         btnPracticeForm.click();
-        return new AuttomationPracticeForm(driver);
+        return new AuttomationPracticeFormPage(driver);
     }
 }
