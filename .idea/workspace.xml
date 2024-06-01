@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17298ad6-de7f-4f76-accd-e320e707b543" name="Changes" comment="added extentions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AutomationPracticeFormTests.java" afterDir="false" />
+    <list default="true" id="17298ad6-de7f-4f76-accd-e320e707b543" name="Changes" comment="add hideFooter, GenderEnum, testAutoPracticeFromPos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/StudentLombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Hobbies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/StateCity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AuttomationPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AuttomationPracticeFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Forms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FormsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AuttomationPracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AuttomationPracticeFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutomationPracticeFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AutomationPracticeFormTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,16 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest.executor": "Run",
-    "TestNG.HomeTests.test.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomeTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA_25_web\QA_25_DemoQA_Mave\src\main\java" />
@@ -129,11 +127,20 @@
       <option name="project" value="LOCAL" />
       <updated>1715170963480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add hideFooter, GenderEnum, testAutoPracticeFromPos">
+      <option name="closed" value="true" />
+      <created>1717242616366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717242616366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added extentions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added extentions" />
+    <MESSAGE value="add hideFooter, GenderEnum, testAutoPracticeFromPos" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hideFooter, GenderEnum, testAutoPracticeFromPos" />
   </component>
 </project>
