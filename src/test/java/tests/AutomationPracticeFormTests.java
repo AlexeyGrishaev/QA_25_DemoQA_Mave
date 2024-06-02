@@ -38,7 +38,7 @@ public class AutomationPracticeFormTests extends ApplicationManager {
                 .city(StateCity.UTTAR_PRADESH.getCity()[1])
                 .build();
         HomePage homePage = new HomePage(getDriver());
-        homePage.hideFooter();// s
+        homePage.hideFooter();
 
         Assert.assertTrue( homePage.clickBtnFroms()
                 .clickBtnPracticeForm()
