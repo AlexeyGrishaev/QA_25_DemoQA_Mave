@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17298ad6-de7f-4f76-accd-e320e707b543" name="Changes" comment="add hideFooter, GenderEnum, testAutoPracticeFromPos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/StudentLombok.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Hobbies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/StateCity.java" afterDir="false" />
+    <list default="true" id="17298ad6-de7f-4f76-accd-e320e707b543" name="Changes" comment="check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AuttomationPracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AuttomationPracticeFormPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AutomationPracticeFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AutomationPracticeFormTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +31,12 @@
     &quot;assignee&quot;: &quot;AlexeyGrishaev&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AlexeyGrishaev/QA_25_DemoQA_Mave.git&quot;,
-    &quot;accountId&quot;: &quot;1808650e-a989-4dcc-9d78-38ff7b2180eb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AlexeyGrishaev/QA_25_DemoQA_Mave",
+    "accountId": "64e83f0b-f89b-4bc0-8650-843ee93e8778"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -51,22 +46,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomeTests.test.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest.executor": "Run",
+    "TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest_equalsStudent.executor": "Run",
+    "TestNG.HomeTests.test.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA_25_web\QA_25_DemoQA_Mave\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest">
+  <component name="RunManager" selected="TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest_equalsStudent">
     <configuration name="AutomationPracticeFormTests.AutomationPracticeFormPositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_25_DemoQA_Mave" />
       <extension name="coverage">
@@ -78,6 +74,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AutomationPracticeFormTests" />
       <option name="METHOD_NAME" value="AutomationPracticeFormPositiveTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomationPracticeFormTests.AutomationPracticeFormPositiveTest_equalsStudent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_25_DemoQA_Mave" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AutomationPracticeFormTests" />
+      <option name="METHOD_NAME" value="AutomationPracticeFormPositiveTest_equalsStudent" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest_equalsStudent" />
         <item itemvalue="TestNG.AutomationPracticeFormTests.AutomationPracticeFormPositiveTest" />
         <item itemvalue="TestNG.HomeTests.test" />
       </list>
@@ -135,12 +150,29 @@
       <option name="project" value="LOCAL" />
       <updated>1717242616366</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="check">
+      <option name="closed" value="true" />
+      <created>1717345914439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717345914439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="check">
+      <option name="closed" value="true" />
+      <created>1717345967781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717345967781</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added extentions" />
     <MESSAGE value="add hideFooter, GenderEnum, testAutoPracticeFromPos" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hideFooter, GenderEnum, testAutoPracticeFromPos" />
+    <MESSAGE value="check" />
+    <option name="LAST_COMMIT_MESSAGE" value="check" />
   </component>
 </project>

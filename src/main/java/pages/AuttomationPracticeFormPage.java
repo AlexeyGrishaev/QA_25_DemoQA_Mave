@@ -4,6 +4,7 @@ import dto.StudentDTO;
 import dto.StudentLombok;
 import enums.Gender;
 import enums.Hobbies;
+import org.bouncycastle.oer.Switch;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +45,24 @@ public class AuttomationPracticeFormPage extends BasePage {
     WebElement btnSubmit;
     @FindBy(id= "example-modal-sizes-title-lg")
     WebElement textThankFor;
+    @FindBy(xpath= "//tbody/tr[1]/td[2]")
+    WebElement modalBodyNameLastName;
+    @FindBy(xpath= "//tbody/tr[2]/td[2]")
+    WebElement modalBodyEmail;
+    @FindBy(xpath= "//tbody/tr[3]/td[2]")
+    WebElement modalBodyGendr;
+    @FindBy(xpath= "//tbody/tr[4]/td[2]")
+    WebElement modalBodyMobile;
+    @FindBy(xpath= "//tbody/tr[5]/td[2]")
+    WebElement modalBodyDateOfBirth;
+    @FindBy(xpath= "//tbody/tr[6]/td[2]")
+    WebElement modalBodySubjects;
+    @FindBy(xpath= "//tbody/tr[7]/td[2]")
+    WebElement modalBodyHobbies;
+    @FindBy(xpath= "//tbody/tr[9]/td[2]")
+    WebElement modalBodyAddress;
+    @FindBy(xpath= "//tbody/tr[10]/td[2]")
+    WebElement modalBodyStateCity;
 
     public AuttomationPracticeFormPage fillStudentForm(StudentLombok student) {
         hideFooter();
@@ -116,8 +135,55 @@ public class AuttomationPracticeFormPage extends BasePage {
     }
     public StudentLombok createStudentFromPage(){
         return StudentLombok.builder()
-
+                .name(modalBodyNameLastName.getText().split(" ")[0])
+                .lastName(modalBodyNameLastName.getText().split(" ")[1])
+                .email(modalBodyEmail.getText())
+                .gender(returnGenderFormPage(modalBodyGendr))
+                .mobile(modalBodyMobile.getText())
+                .dateOfBirth(modalBodyDateOfBirth.getText())
+                .subject(modalBodySubjects.getText())
+                .currentAddress(modalBodyAddress.getText())
+                .state(returnState(modalBodyStateCity))
+                .city(returnCity(modalBodyStateCity))
                 .build();
     }
 
+    private String returnCity(WebElement element) {
+        String[] arratStr = element.getText().split("");
+        if(arratStr.length==2){
+            return  arratStr[1];
+        }else if (arratStr.length==3){
+            return arratStr[2];
+        }else
+            return null;
+    }
+
+    private String returnState (WebElement element){
+        String[] arratStr = element.getText().split("");
+        if(arratStr.length==2){
+            return  arratStr[0];
+        }else if (arratStr.length==3){
+            return (arratStr[0]+" "+arratStr[1]);
+        }else
+            return null;
+    }
+    private Gender returnGenderFormPage (WebElement elementGender){
+        String strGender = elementGender.getText();
+        Gender gender;
+        switch (strGender){
+            case "Male" :{
+                return Gender.MALE;
+
+            }
+            case "Female" :{
+                return Gender.FEMALE;
+
+            }
+            case "Other" :{
+                return Gender.OTHER;
+
+            }
+        }
+        return null;
+    }
 }

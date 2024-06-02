@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import pages.BasePage;
 import pages.HomePage;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class AutomationPracticeFormTests extends ApplicationManager {
@@ -40,13 +41,14 @@ public class AutomationPracticeFormTests extends ApplicationManager {
         HomePage homePage = new HomePage(getDriver());
         homePage.hideFooter();
 
-        Assert.assertTrue( homePage.clickBtnFroms()
+        Assert.assertTrue(homePage.clickBtnFroms()
                 .clickBtnPracticeForm()
                 .fillStudentForm(student)
                 .clickBtnSubmitPositive()
                 .isElementPresent_textThanks());
 
     }
+
     @Test
     public void AutomationPracticeFormPositiveTest_equalsStudent() {
 //        StudentDTO student = new StudentDTO("Frodo","Beggins","FrodoBeggins@mail.com", Gender.FEMALE);
@@ -70,12 +72,14 @@ public class AutomationPracticeFormTests extends ApplicationManager {
         HomePage homePage = new HomePage(getDriver());
         homePage.hideFooter();
 
-         homePage.clickBtnFroms()
+        StudentLombok studentModal = homePage.clickBtnFroms()
                 .clickBtnPracticeForm()
                 .fillStudentForm(student)
-                .clickBtnSubmitPositive();
-
-
+                .clickBtnSubmitPositive()
+                .createStudentFromPage();
+        System.out.println(student.toString());
+        System.out.println(studentModal.toString());
+        Assert.assertTrue(student.equals(studentModal));
 
     }
 }
