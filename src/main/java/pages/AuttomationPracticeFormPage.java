@@ -73,8 +73,9 @@ public class AuttomationPracticeFormPage extends BasePage {
         fieldMobile.sendKeys(student.getMobile());
         //fieldDateOfBirth.sendKeys(student.getDateOfBirth());
         typeDateOfBirth(student.getDateOfBirth());
-        typeSubject(student.getSubject());
+        typeSubject(student.getSubjects());
         typeHobbies(student.getHobbies());
+        //========================================================
         fieldCurrentAddress.sendKeys(student.getCurrentAddress());
         fieldState.sendKeys(student.getState());
         fieldState.sendKeys(Keys.ENTER);
@@ -108,7 +109,7 @@ public class AuttomationPracticeFormPage extends BasePage {
     }
 
     private void typeSubject(String subject) {
-        String[] splitArray = subject.split(",");
+        String[] splitArray = subject.split(", ");
         fieldSubject.click();
         for (String sub : splitArray) {
             fieldSubject.sendKeys(sub);
@@ -141,7 +142,7 @@ public class AuttomationPracticeFormPage extends BasePage {
                 .gender(returnGenderFormPage(modalBodyGendr))
                 .mobile(modalBodyMobile.getText())
                 .dateOfBirth(modalBodyDateOfBirth.getText())
-                .subject(modalBodySubjects.getText())
+                .subjects(modalBodySubjects.getText())
                 .currentAddress(modalBodyAddress.getText())
                 .state(returnState(modalBodyStateCity))
                 .city(returnCity(modalBodyStateCity))
@@ -149,7 +150,7 @@ public class AuttomationPracticeFormPage extends BasePage {
     }
 
     private String returnCity(WebElement element) {
-        String[] arratStr = element.getText().split("");
+        String[] arratStr = element.getText().split(" ");
         if(arratStr.length==2){
             return  arratStr[1];
         }else if (arratStr.length==3){
@@ -159,7 +160,7 @@ public class AuttomationPracticeFormPage extends BasePage {
     }
 
     private String returnState (WebElement element){
-        String[] arratStr = element.getText().split("");
+        String[] arratStr = element.getText().split(" ");
         if(arratStr.length==2){
             return  arratStr[0];
         }else if (arratStr.length==3){
@@ -169,7 +170,7 @@ public class AuttomationPracticeFormPage extends BasePage {
     }
     private Gender returnGenderFormPage (WebElement elementGender){
         String strGender = elementGender.getText();
-        Gender gender;
+
         switch (strGender){
             case "Male" :{
                 return Gender.MALE;
